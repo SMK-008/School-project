@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients Login</title>
+</head>
+<body>
+
+   <form action="">
+        <label for="ssn"><abbr title = "Social Security Number">SSN</abbr></label>
+        <input type = "number" name = "ssn"><br>
+
+        <label for="username">Username</label>
+        <input type = "text" name="username"><br>
+        <label for="city">City</label>
+        <select>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Nakuru">Nakuru</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Eldoret">Eldoret</option>
+            <option value="Garissa">Garissa</option>
+            <option value="Kisumu">Kisumu</option>
+        </select>
+        <label for="age">Age:</label>
+        <select id="age" name="age">
+          <script>
+            for (let i = 1; i <= 100; i++) {
+              document.write('<option value="' + i + '">' + i + '</option>');
+            }
+          </script>
+        </select>
+        
+
+        
+
+   </form>
+    
+</body>
+</html>
