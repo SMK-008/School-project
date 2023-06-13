@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+</head>
+<body>
+    <h1>Doctor Registration</h1>
+    <form action="">
+        <label for="ssn">SSN</label>
+        <input type = "number" name = "ssn"><br>
+        
+        <label for = "doctor_name">Doctor Name</label>
+        <input for = "doctor_name" type = "text"><br>
+
+        <label for ="specialty">Specialty</label>
+        <select name="specialty" id="">
+            <option value="pediatrics">Pediatrics</option>
+            <option value="angiology">Angiology</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="hepatology">Hepatology</option>
+            <option value="geriatrics">Geriatrics</option>
+        </select><br>
+
+        <label for="years">Years of Experience</label>
+        <select name="experience" id="">
+            <script>
+            for(var i = 1; i <= 70; i++){
+                document.write('<option value="' + i + '">' + i + '</option>');
+            }
+        </script>
+        </select>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
