@@ -35,11 +35,12 @@
       </select>
       <br>
       <button type = "button" onclick="submitData();">Register</button>
-
-      <a href= "">Login Instead</a>
-
-      
-        
   </form> 
+  <br>
+  <a href= "">Login Instead</a>
+
+  <?php
+   
+  ?>
 </body>
-</html>
+</html>>
