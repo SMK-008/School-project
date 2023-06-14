@@ -10,6 +10,8 @@
 
   <h1>Patient Registration</h1>
    <form action="addpatients.php" method="post">
+
+      <input type="hidden" id = "action" value = "register">
       <label for="">Patient SSN</label>
       <input type = "number" id = "ssn" value =""><br>
 
@@ -37,10 +39,10 @@
       <button type = "button" onclick="submitData();">Register</button>
   </form> 
   <br>
-  <a href= "">Login Instead</a>
+  <a href= "login.php">Go to Login </a>
 
-  <?php
-   
+  <?php 
+    require 'script.php';
   ?>
 </body>
 </html>>
