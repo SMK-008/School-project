@@ -9,14 +9,14 @@
 <body>
 
   <h1>Patient Registration</h1>
-   <form class = "" action="" method="post">
-      <label for="ssn">Patient SSN</label>
-      <input type = "number" name = "ssn"><br>
+   <form action="addpatients.php" method="post">
+      <label for="">Patient SSN</label>
+      <input type = "number" id = "ssn" value =""><br>
 
-      <label for="username">Username</label>
-      <input type = "text" name="patient_name"><br>
+      <label for="">Username</label>
+      <input type = "text" id ="patient_name" value = ""><br>
       <label for="city">City</label>
-      <select>
+      <select id = "patient_address" value ="">
           <option value="Nairobi">Nairobi</option>
           <option value="Nakuru">Nakuru</option>
           <option value="Mombasa">Mombasa</option>
@@ -25,8 +25,8 @@
           <option value="Kisumu">Kisumu</option>
       </select>
 
-      <label for="age">Age:</label>
-      <select for="age">
+      <label for="">Age:</label>
+      <select id = "age" value ="">
         <script>
           for (let i = 1; i <= 100; i++) {
             document.write('<option value="' + i + '">' + i + '</option>');
@@ -34,7 +34,11 @@
         </script>
       </select>
       <br>
-      <button type = "submit">Register</button>
+      <button type = "button" onclick="submitData();">Register</button>
+
+      <a href= "">Login Instead</a>
+
+      
         
   </form> 
 </body>
