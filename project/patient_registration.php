@@ -13,12 +13,12 @@
 
       <input type="hidden" id = "action" value = "register">
       <label for="">Patient SSN</label>
-      <input type = "number" id = "ssn" value =""><br>
+      <input type = "number" id = "ssn" name = "ssn" value =""><br>
 
-      <label for="">Username</label>
-      <input type = "text" id ="patient_name" value = ""><br>
+      <label for="">Patient Username</label>
+      <input type = "text" id ="patient_name" name = "patient_name" value = ""><br>
       <label for="city">City</label>
-      <select id = "patient_address" value ="">
+      <select name ="patient_address" id = "patient_address" value ="">
           <option value="Nairobi">Nairobi</option>
           <option value="Nakuru">Nakuru</option>
           <option value="Mombasa">Mombasa</option>
@@ -28,7 +28,7 @@
       </select>
 
       <label for="">Age:</label>
-      <select id = "age" value ="">
+      <select id = "age" name = "age"value ="">
         <script>
           for (let i = 1; i <= 100; i++) {
             document.write('<option value="' + i + '">' + i + '</option>');
