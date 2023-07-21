@@ -1,3 +1,16 @@
+<?php
+    require 'function_ph.php';
+    if(isset($_SESSION["id"])){
+        $id = $_SESSION["id"];
+        $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM pharmacists WHERE p_pwd = $id"));
+    }else{
+        header("Location: login_ph.php");
+    }
+?>
+<!DOCTYPE html>
+<html>
+
+
 <head>
   <title>Pharmacist Homepage</title>
   <link rel="stylesheet" type="text/css" href="homepageeg.css">
@@ -59,7 +72,7 @@
     <h2 id = "" class="pull-left">Pending Prescriptions to be administered</h2>
     </div>
     <?php
-    include_once 'drugsconnect.php';
+    include_once 'connect.php';
     $result = mysqli_query($conn,"SELECT * FROM prescriptions");
     ?>
     <?php
@@ -104,7 +117,7 @@
     <br>
 
     <button onclick="toggleTable2()">Administered Prescriptions</button>
-    <div id = "myTable2" class ="bs-example">
+    <div id = "myTable2" class ="bs-example" style = "display : none">
     <div class="container">
     <div class="row">
     <div class="col-md-12">
