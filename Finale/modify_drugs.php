@@ -123,12 +123,12 @@ $result = $conn->query($sql);
 <br>
 
 <button onclick="toggleTable2()">Edit Drugs List</button>
-<div id = "myTable2" class ="bs-example">
+<div id = "myTable2" class ="bs-example"  style = "display : none">
     <div class="container">
     <div class="row">
     <div class="col-md-12">
     <div class="page-header clearfix">
-    <h2 id = "myTable" class="pull-left">Administered Drugs</h2>
+    <h2 id = "myTable" class="pull-left">Drugs in Database</h2>
     </div>
     <?php
     include_once 'connect.php';
