@@ -72,7 +72,7 @@
   <section>
 
   <button onclick="toggleTable()">View Prescriptions</button>
-    <div id = "myTable" class ="bs-example">
+    <div id = "myTable" class ="bs-example"  style = "display : none">
     <div class="container">
     <div class="row">
     <div class="col-md-12">
@@ -124,7 +124,7 @@
     <br>
 
     <button onclick="toggleTable2()">Administered Prescriptions</button>
-    <div id = "myTable2" class ="bs-example">
+    <div id = "myTable2" class ="bs-example"  style = "display : none">
     <div class="container">
     <div class="row">
     <div class="col-md-12">
