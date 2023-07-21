@@ -22,6 +22,14 @@
         }
       }
     </script>
+	
+	  <script>
+    function clearTable() {
+      var table = document.getElementById("myTable");
+      table.innerHTML = "";
+    }
+  </script>
+
 </head>
 <body>
   <header>
