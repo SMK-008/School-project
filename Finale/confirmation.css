@@ -1,0 +1,15 @@
+
+ body{
+        background-color: #1690a7;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #confirm{
+        width: 500px;
+        border: 2px solid #ccc;
+        padding: 30px;
+        background:#fff;
+        border-radius: 15px;
+    }
