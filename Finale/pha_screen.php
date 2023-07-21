@@ -104,7 +104,7 @@
     <br>
 
     <button onclick="toggleTable2()">Administered Prescriptions</button>
-    <div id = "myTable2" class ="bs-example"  style = "display : none">
+    <div id = "myTable2" class ="bs-example">
     <div class="container">
     <div class="row">
     <div class="col-md-12">
@@ -116,7 +116,37 @@
     $result = mysqli_query($conn,"SELECT * FROM prescriptions");
     ?>
     <?php
-	@@ -170,10 +175,7 @@ function clearTable() {
+    if (mysqli_num_rows($result) > 0) {
+    ?>
+    <table class='table table-bordered table-striped'>
+    <tr>
+    <td>Patient Name</td>
+    <td>Drug Name</td>
+    <td>Drug Amount</td>
+    <td>Frequency</td>
+    </tr>
+    <?php
+    $i=0;
+    while($row = mysqli_fetch_array($result)) {
+    ?>
+    <tr>
+    <td><?php echo $row['patientName']; ?></td>
+    <td><?php echo $row["drugName"]; ?></td>
+    <td><?php echo $row["drugAmount"]; ?></td>
+    <td><?php echo $row["frequency"]; ?></td>
+    </tr>
+    <?php
+    $i++;
+    }
+    ?>
+    </table>
+    <?php
+    }
+    else{
+    echo "No result found";
+    }
+    ?>
+    </div>
     </div>        
     </div>
     </div>
